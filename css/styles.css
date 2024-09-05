@@ -1,0 +1,333 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background-color: #ffffff;
+}
+
+.container {
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    height: 90px;
+    width: 1430px;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: end;
+    padding: 20px;
+    position: fixed;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+    top: 10px;
+    z-index: 2;
+    border: 0px inset black;
+}
+
+.navbar h1 {
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    left: 5%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    height: 80px;
+    align-content: end;
+    align-items: end;
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .4s;
+}
+
+nav a:hover {
+    scale: 1.2;
+    filter: drop-shadow(0px 0px 10px white);
+    color: yellow;
+}
+
+button {
+    border-radius: 100px;
+    border-color: black;
+    padding: 3px;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: #e9e9e9;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.Homecontent .button:hover {
+    scale: 1.1;
+    box-shadow: 0px 0px 10px black;
+}
+
+#Home .Homecontent {
+    text-align: center;
+    background-size: auto;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding-top: 240px;
+}
+
+.Homecontent h2 {
+    display: inline;
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 20px;
+    background-color: yellow;
+    width: 8px;
+    height: 70px;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+
+.Homecontent h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Homecontent span {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+.Homecontent .p {
+    padding-top: 50px;
+    line-height: 20px;
+    display: inline;
+    background-color: white;
+    color: black;
+}
+
+#Home {
+    border-color: yellow;
+    border-width: 30px;
+    border-style: solid;
+}
+
+
+/*==============ABOUT PAGE===============*/
+#About {
+    padding-top: 60px;
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 90%;
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+
+#About .aboutcontent {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-left: 90px;
+    font-size: 2em;
+}
+
+#About .aboutcontent h1 {
+    color: rgb(211, 211, 57);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+
+#About .aboutcontent h3 {
+    font-size: 25px;
+    font-weight: 700;
+    font-size: 3.5em;
+    padding-bottom: 50px;
+}
+
+.jo {
+    font-weight: 800;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.p {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+#About .aboutcontent .about_img {
+    background-color: white;
+    border-radius: 50%;
+    align-content: end;
+}
+
+/*================Skills page=============*/
+#MySkills {
+    border-color: yellow;
+    border-width: 3px;
+    border-style: solid;
+    padding-bottom: 60px;
+    background-color: black;
+    padding-left: 40px;
+    padding-top: 10%;
+}
+
+.heading {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.skill {
+    padding: 20px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.no {
+    border-radius: 50px;
+    background-color: yellow;
+    color: black;
+    padding: 5px;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.topic {
+    padding-bottom: px;
+    background-color: black;
+    color: white;
+    display: inline;
+    font-size: 25px;
+}
+
+.htmlbox {
+    width: 80%;
+}
+
+.cssbox {
+    width: 50%
+}
+
+.javascriptbox {
+    width: 10%;
+}
+
+.pythonbox {
+    width: 60%;
+}
+
+.mysqlbox {
+    width: 70%;
+}
+
+/* ===========contacts page=========== */
+.box {
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    opacity: 0.1;
+}
+
+#Contacts {
+    border-color: yellow;
+    border-width: 30px;
+    border-style: solid;
+    display: grid;
+    grid-template-rows: 20vh 60vh 20vh;
+}
+
+.heading-contacts {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+.contacts-content {
+    align-content: center;
+    justify-content: flex-start;
+    margin-left: 30%;
+    align-items: start;
+    font-size: 1.5em;
+}
+
+.line1 {
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+.email-img {
+    position: absolute;
+}
+
+.line2 {
+    padding-bottom: 30px;
+    padding-left: 50px;
+
+}
+
+.linkedin-img {
+    position: absolute;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav h1 {
+        left: 8%;
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .navigation .a {
+        text-align: center;
+        float: none;
+    }
+}
+
+@media(max-width: 1300px) {
+    .navbar {
+        padding: 0;
+        flex-shrink: 0;
+    }
+}

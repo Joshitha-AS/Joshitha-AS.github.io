@@ -79,6 +79,12 @@ button {
     transition: .4s;
 }
 
+button a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
 .Homecontent .button:hover {
     scale: 1.1;
     box-shadow: 0px 0px 10px black;

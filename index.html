@@ -99,24 +99,35 @@
         </section>
 
         <!-- contacts page -->
-
-        <div id="contacts" class="container">
-            <section class="contact-section">
+        <section id="contacts" class="container">
+            <h3 class="heading-contacts">Contact Me</h3>
+            <form class="contacts-content">
+                <div class="input-container">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                </div>
                 
-                <h3 class="heading-contacts">Contact Me</h3>
-                <form class="contacts-content">
-                    <div class="input-container form-enter">
-                        <input type="text" placeholder="First Name" required>
-                        <input type="email" placeholder="Enter Email" required>
-
-                    </div>
-                    <div> <textarea name="comment" id="comment" class="form-control"
-                            placeholder="Enter Your messsge..."></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn">Contact Me!</button>
-                    </div>
-                </form>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email" required>
+                </div>
+                
+                <div class="input-container">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" placeholder="Mobile Number" required>
+                </div>
+                
+                <div class="input-container">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" placeholder="Enter Your Message..." required></textarea>
+                </div>
+                
+                <div>
+                    <button type="submit" class="btn">Contact Me!</button>
+                </div>
+            </form>
+        </section>
+        
     </main>
 
 

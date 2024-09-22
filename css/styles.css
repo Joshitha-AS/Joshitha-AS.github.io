@@ -278,95 +278,65 @@ button {
 }
 
 /* ===========contacts page=========== */
-.contact-section {
-    margin: 100px;
-    text-align: center;
-    
- }
- 
- .contact-section h3 {
-    color:gold;
-    padding-top: 5%;
+#contacts {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.heading-contacts {
+    color: black;
+    padding-top: 10%;
     font-size: 3em;
- }
-
- .input-container {
-    display: flex;
     text-align: center;
-    gap: 10px;
-    margin-bottom: 20px;
- }
-
- input[type="text"],
- input[type="email"] {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    padding-left: 3%;
-    text-align: start;
-    margin-bottom: 10px;
- }
-
- .form-control{
-   text-align:start;
-   padding-left: 15px;
-   font-size: 1.5rem;
-
-}
-
- .form-enter{
-    margin-left: 23%;
- }
-
- #comment{
-    width: 700px;
-    height: 200px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1.7rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
-
- .heading-contacts{
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 50px;
-}
-
-.contacts-content {
-    align-content: center;
-    justify-content: flex-start;
-    align-items: start;
-    font-size: 1.5rem;
-    padding-top: 5%;
-   
-}
-
-#contacts .btn{
-    margin-top: 3%;
 }
 
 #contacts input{
     border: 2px solid black;
-   padding: 1%;
-   background-color: yellow;
-
+    background-color: yellow;
 }
 
-#contacts textarea{
+.contacts-content {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.input-container .form-control{
     border: 2px solid black;
     background-color: yellow;
 }
 
-#contacts {
-    border-color: yellow;
-    border-width: 30px;
-    border-style: solid;
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-#contacts .btn{
+.input-container textarea {
+    resize: vertical;
+    height: 100px;
+    /* Initial height for the textarea */
+}
+
+
+
+.btn{
+    margin-top: 3%;
+    margin-left: 35%;
     border-radius: 100px;
     border-color: black;
     padding: 3px;
@@ -378,9 +348,27 @@ button {
     transition: .4s;
 }
 
-#contacts  .btn:hover{
+#contacts .btn:hover {
     scale: 1.1;
     box-shadow: 0px 0px 10px black;
+}
+
+#contacts{
+    border-color: yellow;
+    border-width: 30px;
+    border-style: solid;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+    .contacts-content {
+        padding: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
 
 

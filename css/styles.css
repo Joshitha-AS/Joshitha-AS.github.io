@@ -7,7 +7,7 @@
     background-color: #ffffff;
 }
 
-.container {
+.container{
     height: 100vh;
     margin: 0;
 }
@@ -32,7 +32,7 @@
     font-weight: 600;
     position: absolute;
     top: 30px;
-    left: 10%;
+    left: 5%;
 }
 
 nav {
@@ -79,12 +79,6 @@ button {
     transition: .4s;
 }
 
-button a{
-    background-color: black;
-    text-decoration: none;
-    color: white;
-}
-
 .Homecontent .button:hover {
     scale: 1.1;
     box-shadow: 0px 0px 10px black;
@@ -110,8 +104,8 @@ button a{
     border-radius: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 0px;
     padding-top: 5px;
+    padding-bottom: 0px;
 }
 
 .Homecontent h3 {
@@ -138,6 +132,31 @@ button a{
     border-color: yellow;
     border-width: 30px;
     border-style: solid;
+}
+
+#Home .Homecontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem;
+    
+}
+
+.home-img{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img img{
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid yellow;
 }
 
 
@@ -259,53 +278,110 @@ button a{
 }
 
 /* ===========contacts page=========== */
-.box {
-    height: 30px;
-    width: 30px;
-    background-color: yellow;
-    opacity: 0.1;
+.contact-section {
+    margin: 100px;
+    text-align: center;
+    
+ }
+ 
+ .contact-section h3 {
+    color:gold;
+    padding-top: 5%;
+    font-size: 3em;
+ }
+
+ .input-container {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+ }
+
+ input[type="text"],
+ input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding-left: 3%;
+    text-align: start;
+    margin-bottom: 10px;
+ }
+
+ .form-control{
+   text-align:start;
+   padding-left: 15px;
+   font-size: 1.5rem;
+
 }
 
-#Contacts {
-    border-color: yellow;
-    border-width: 30px;
-    border-style: solid;
-    display: grid;
-    grid-template-rows: 20vh 60vh 20vh;
-}
+ .form-enter{
+    margin-left: 23%;
+ }
 
-.heading-contacts {
+ #comment{
+    width: 700px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .heading-contacts{
     align-content: center;
     justify-content: center;
     text-align: center;
-    font-size: 30px;
-    padding-top: 60px;
+    font-size: 1.5rem;
+    padding-top: 50px;
 }
 
 .contacts-content {
     align-content: center;
     justify-content: flex-start;
-    margin-left: 30%;
     align-items: start;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    padding-top: 5%;
+   
 }
 
-.line1 {
-    padding-bottom: 30px;
-    padding-left: 50px;
+#contacts .btn{
+    margin-top: 3%;
 }
 
-.email-img {
-    position: absolute;
-}
-
-.line2 {
-    padding-bottom: 30px;
-    padding-left: 50px;
+#contacts input{
+    border: 2px solid black;
+   padding: 1%;
+   background-color: yellow;
 
 }
 
-.linkedin-img {
-    position: absolute;
+#contacts textarea{
+    border: 2px solid black;
+    background-color: yellow;
 }
+
+#contacts {
+    border-color: yellow;
+    border-width: 30px;
+    border-style: solid;
+}
+
+#contacts .btn{
+    border-radius: 100px;
+    border-color: black;
+    padding: 3px;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: #e9e9e9;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#contacts  .btn:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 10px black;
+}
+
+
 

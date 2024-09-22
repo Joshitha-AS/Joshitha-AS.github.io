@@ -27,11 +27,20 @@
             </header>
 
             <section class="Homecontent">
-                <h2>Hey, I'm Joshitha</h2>
-                <h3>I'm a <span>Web developer</span></h3>
-                <p>with good experience and skills in various fields of web development
-                    and software designing </p><br>
-                <button class="button" ><a href="mailto:joshitha.adaikalam@fssa.freshworks.com">Hire Me!</a></button><br>
+                <div>
+                    <img src="./assets/Untitled design (1).png" alt="profile picture" height="200" class="home-img">
+                </div>
+
+                <div class="home-desc">
+                    <h2>Hey, I'm Joshitha</h2>
+                    <h3>I'm a <span>Web developer</span></h3>
+                    <p>with good experience and skills in various fields of web development
+                        and software designing </p><br>
+                </div>
+
+                <div class="btn-box btns">
+                    <button type="submit" class="button">Hire Me!</button>
+                </div>
             </section>
         </section>
 
@@ -91,16 +100,23 @@
 
         <!-- contacts page -->
 
-        <section id="Contacts" class="container">
-            <h1 class="heading-contacts">CONTACTS</h1>
-            <div class="contacts-content">
-                <img class="email-img" src="./assets/img_4.webp" height="30px" alt="pic">
-                <h3 class="line1">joshitha.adaikalam@fssa.freshworks.com</h3>
-                <img class="linkedin-img" src="./assets/img_5.png" height="30px" alt="pic">
-                <h3 class="line2">Joshitha Adaikalam</h3>
-            </div>
-            
-        </section>
+        <div id="contacts" class="container">
+            <section class="contact-section">
+                
+                <h3 class="heading-contacts">Contact Me</h3>
+                <form class="contacts-content">
+                    <div class="input-container form-enter">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="email" placeholder="Enter Email" required>
+
+                    </div>
+                    <div> <textarea name="comment" id="comment" class="form-control"
+                            placeholder="Enter Your messsge..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn">Contact Me!</button>
+                    </div>
+                </form>
     </main>
 
 

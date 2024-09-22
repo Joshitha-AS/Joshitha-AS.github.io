@@ -79,6 +79,13 @@ button{
     transition: .4s;
 }
 
+.btns .button a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+
 .Homecontent .button:hover {
     scale: 1.1;
     box-shadow: 0px 0px 10px black;
@@ -296,6 +303,7 @@ button{
 #projects p {
     font-size: 1.2em;
 }
+
 
 .projects {
     margin-top: 8%;

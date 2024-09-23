@@ -15,7 +15,7 @@
 
 .navbar {
     height: 90px;
-    width: 1430px;
+    width: 100VW;
     display: flex;
     flex-basis: 100%;
     justify-content: end;
@@ -170,9 +170,57 @@ button{
     border: .2rem solid yellow;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.5px;
+    }
+
+    .navbar h1 {
+        display: none;
+    }
+
+    nav ul {
+        margin-right: 0;
+        text-align: center;
+    }
 
 
+    nav ul li {
+        margin: 0 10px;
+        line-height: 80px;
+    }
 
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    .home-img {
+        margin-top: 20%;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    #Home .Homecontent {
+        padding: 1em;
+    }
+
+    .Homecontent h2 {
+        font-size: 1em;
+        padding: 5px 10px;
+    }
+
+    .Homecontent h3 {
+        font-size: 1.2em;
+    }
+
+    .btns .button {
+        width: 150px;
+        height: 40px;
+    }
+}
 
 
 /*==============ABOUT PAGE===============*/
@@ -242,8 +290,8 @@ button{
     }
 
      #About .about_img {
-      height: 100px;
-      width: 100px;
+      height: 150px;
+      width: 150px;
       margin: auto;
 
     }
@@ -251,7 +299,7 @@ button{
 
 @media (max-width: 768px) {
     #About .aboutcontent h1 {
-        font-size: 1em; /* Smaller size for heading */
+        font-size: 1em; 
     }
 
     #About .aboutcontent h2 {
@@ -267,22 +315,24 @@ button{
     #About {
         padding-top: 100px; 
         padding-bottom: 100px; 
+        text-align: center;
     }
 
     #About .aboutcontent {
-        font-size: 1em; 
+        font-size: 1.2em; 
     }
 
     #About .aboutcontent h1 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #About .aboutcontent h2 {
-        font-size: 1em; 
+        font-size: 1.3em; 
     }
 
     .about_name {
-        font-size: 0.2em; 
+        font-size: 1em;
+        font-weight: 900; 
     }
 
     .about_description {
@@ -369,16 +419,16 @@ button{
 }
 
 #projects p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 
 .projects {
-    margin-top: 2%;
+    margin-top: 8%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    padding: 2rem; 
+    padding: 2rem;
 }
 
 .projects .project{
@@ -390,6 +440,8 @@ button{
     text-align: center;
 
 }
+
+
 
 .projects .project:hover{
     transform: scale(1.07);
@@ -419,14 +471,16 @@ button{
 @media (max-width: 600px) {
     .projects {
         grid-template-columns: 1fr;
+        text-align: center;
     }
     .projects img{
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 100px;
     }
     .project{
-        width: auto;
-        height: auto; 
+        box-sizing: border-box;
+        width: 200px;
+        height: 150px; 
     }
     #projects{
         text-align: center;
@@ -435,22 +489,26 @@ button{
     }
     
     #projects h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 0.5rem;
     }
     
     #projects p {
-        font-size: 1.2em;
+        display: none;
     }
     
     .projects {
-        margin-top: 2%;
+        margin-top: 0%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 1rem;
-        padding: 1rem;
+        padding: 2rem;
     }
-
+    
+    .project a{
+        font-size: 5px;
+        
+    }
 }
 
 /* ===========contacts page=========== */

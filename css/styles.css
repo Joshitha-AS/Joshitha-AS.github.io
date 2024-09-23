@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     background-color: #ffffff;
+    caret-color: transparent;
 }
 
 .container {

@@ -66,7 +66,7 @@ nav a.active{
     scale: 1.2;
     filter: drop-shadow(0px 0px 10px white);
     color: gold;
-}
+} 
 
 
 button{
@@ -168,6 +168,9 @@ button{
     border-radius: 50%;
     border: .2rem solid yellow;
 }
+
+
+
 
 
 /*==============ABOUT PAGE===============*/
@@ -413,20 +416,42 @@ button{
     background-color: #0056b3;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
 
 @media (max-width: 600px) {
     .projects {
         grid-template-columns: 1fr;
     }
+    .projects img{
+        height: 50px;
+        width: 50px;
+    }
+    .project{
+        width: auto;
+        height: auto; 
+    }
+    #projects{
+        text-align: center;
+        padding: 2rem;
+        padding-top: 10%;
+    }
+    
+    #projects h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #projects p {
+        font-size: 1.2em;
+    }
+    
+    .projects {
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+
 }
 
 /* ===========contacts page=========== */

@@ -173,6 +173,7 @@ button{
 
 
 
+
 /*==============ABOUT PAGE===============*/
 #About {
     padding-top: 60px;
@@ -347,11 +348,11 @@ button{
 }
 
 .pythonbox {
-    width: 60%;
+    width: 20%;
 }
 
 .mysqlbox {
-    width: 70%;
+    width: 40%;
 }
 
 

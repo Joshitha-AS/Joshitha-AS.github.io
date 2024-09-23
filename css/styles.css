@@ -369,16 +369,16 @@ button{
 }
 
 #projects p {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 
 .projects {
-    margin-top: 8%;
+    margin-top: 2%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 2rem; 
 }
 
 .projects .project{

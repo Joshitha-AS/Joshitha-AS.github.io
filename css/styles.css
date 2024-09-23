@@ -61,11 +61,13 @@ nav ul li a {
     transition: .4s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active{
     scale: 1.2;
     filter: drop-shadow(0px 0px 10px white);
-    color: yellow;
+    color: gold;
 }
+
 
 button{
     border-radius: 100px;
@@ -220,6 +222,70 @@ button{
     background-color: white;
     border-radius: 50%;
     align-content: end;
+}
+
+@media (max-width: 1200px) {
+    #About {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        padding-bottom: 150px; /* Adjust padding for smaller screens */
+    }
+
+    #About .aboutcontent {
+        margin-left: 0; /* Remove left margin */
+        padding-left: 0; /* Remove padding */
+        text-align: center; /* Center text */
+    }
+
+     #About .about_img {
+      height: 100px;
+      width: 100px;
+      margin: auto;
+
+    }
+} 
+
+@media (max-width: 768px) {
+    #About .aboutcontent h1 {
+        font-size: 1em; /* Smaller size for heading */
+    }
+
+    #About .aboutcontent h2 {
+        font-size: 1em; /* Adjust size */
+    }
+
+    /* .about_name {
+        font-size: 1em; /* Adjust size */
+    } */
+
+    .about_description {
+        font-size: 0.5em; /* Smaller description */
+    }
+
+@media (max-width: 480px) {
+    #About {
+        padding-top: 100px; /* Further reduce top padding */
+        padding-bottom: 100px; /* Further reduce bottom padding */
+    }
+
+    #About .aboutcontent {
+        font-size: 1em; /* Smaller base font size */
+    }
+
+    #About .aboutcontent h1 {
+        font-size: 1em; /* Adjust heading size */
+    }
+
+    #About .aboutcontent h2 {
+        font-size: 1em; /* Adjust heading size */
+    }
+
+    .about_name {
+        font-size: 0.2em; /* Adjust size */
+    }
+
+    .about_description {
+        font-size: 0.5em; /* Smaller description */
+    }
 }
 
 /*================Skills page=============*/

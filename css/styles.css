@@ -15,7 +15,7 @@
 
 .navbar {
     height: 90px;
-    width: 1440px;
+    width: 100vw;
     display: flex;
     flex-basis: 100%;
     justify-content: end;

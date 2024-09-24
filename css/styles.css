@@ -173,7 +173,7 @@ button{
 @media (max-width: 768px) {
     .navbar {
         height: auto;
-        width:auto;
+        width:100vw;
         flex-direction: column;
         justify-content: center;
         padding: 0.5px;

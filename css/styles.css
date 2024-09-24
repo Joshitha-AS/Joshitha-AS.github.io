@@ -226,7 +226,7 @@ button{
 
 /*==============ABOUT PAGE===============*/
 #About {
-    padding-top: 60px;
+    
     display: flex;
     position: relative;
     height: 100vh;
@@ -237,8 +237,8 @@ button{
 
 #About .aboutcontent {
     margin-top: 20px;
-    margin-left: 100px;
-    padding-left: 90px;
+    margin-left: 50px;
+    padding-left: 80px;
     font-size: 2em;
 }
 

@@ -15,7 +15,7 @@
 
 .navbar {
     height: 90px;
-    width: 100VW;
+    width: 1440PX;
     display: flex;
     flex-basis: 100%;
     justify-content: end;
@@ -74,7 +74,7 @@ button{
     border-radius: 100px;
     border-color: black;
     padding: 3px;
-    width: 200px;
+    width: 180px;
     height: 50px;
     background-color: black;
     color: #e9e9e9;
@@ -86,6 +86,7 @@ button{
     background-color: black;
     text-decoration: none;
     color: white;
+    font-size: 18px;
 }
 
 
@@ -151,7 +152,6 @@ button{
     flex-direction: column;
     gap: 2rem;
     padding: 6rem;
-
 }
 
 .home-img {
@@ -173,7 +173,7 @@ button{
 @media (max-width: 768px) {
     .navbar {
         height: auto;
-        width:100vw;
+        width:auto;
         flex-direction: column;
         justify-content: center;
         padding: 0.5px;
@@ -252,6 +252,10 @@ button{
     padding-bottom: 15px;
 }
 
+#About h2{
+    padding-bottom: 4%;
+}
+
 #About .aboutcontent h3 {
     font-size: 25px;
     font-weight: 700;
@@ -259,11 +263,10 @@ button{
     padding-bottom: 50px;
 }
 
-.jo {
-    font-weight: 800;
-    font-size: 35px;
-    color: rgb(0, 0, 0);
+#About span{
+    font-weight: 600;
 }
+
 
 .p {
     padding-top: 20px;
@@ -277,6 +280,11 @@ button{
     border-radius: 50%;
     align-content: end;
 }
+
+#About .about_para{
+    width: 90%;
+}
+
 
 @media (max-width: 1200px) {
     #About {
@@ -372,8 +380,9 @@ button{
     color: black;
     padding: 5px;
     text-align: right;
-    font-size: 20px;
+    font-size: 23px;
     border-radius: 15px;
+    font-weight: 900;
 }
 
 .topic {
@@ -576,13 +585,14 @@ button{
     border-radius: 100px;
     border-color: black;
     padding: 3px;
-    width: 200px;
+    width: 180px;
     height: 50px;
     background-color: black;
     color: #e9e9e9;
     cursor: pointer;
     transition: .4s;
 }
+
 
 #contacts .btn:hover {
     scale: 1.1;

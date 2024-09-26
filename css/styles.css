@@ -155,6 +155,12 @@ button{
 }
 
 @media (max-width: 768px) {
+
+    body{
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
     .navbar {
         height: auto;
         width:auto;
@@ -455,18 +461,18 @@ button{
 
 
 @media (max-width: 600px) {
+
     .projects {
-        grid-template-columns: 1fr;
         text-align: center;
     }
     .projects img{
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
     }
     .project{
         box-sizing: border-box;
-        width: 200px;
-        height: 150px; 
+        width: 210px;
+        height: 210px; 
     }
     #projects{
         text-align: center;
@@ -589,7 +595,7 @@ button{
     }
 
     .btn {
-        width: 100%;
+        width: 40%;
     }
 }   
 

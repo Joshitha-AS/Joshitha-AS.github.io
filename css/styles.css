@@ -4,8 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    background-color: #ffffff;
-   
+    background-color: #ffffff; 
 }
 
 .container {
@@ -409,11 +408,15 @@ button{
     font-size: 1.2em;
 }
 
+#projects .project_desc{
+    font-size:1.5em;
+}
+
 
 .projects {
     margin-top: 8%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
     padding: 2rem;
 }
@@ -436,15 +439,18 @@ button{
 .project p {
     margin-top: 3rem;
     margin-bottom: 2rem;
+    color: black;
 }
 
 .project a {
     box-sizing: border-box;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    color: black;
+    padding: 0.5rem 1rem;   
     text-decoration: none;
-    border-radius: 5px;
+}
+
+#projects button{
+    width: 40%;
+    font-size: 1em;
 }
 
 .project button:hover {
@@ -557,7 +563,6 @@ button{
 .input-container textarea {
     resize: vertical;
     height: 100px;
-    /* Initial height for the textarea */
 }
 
 

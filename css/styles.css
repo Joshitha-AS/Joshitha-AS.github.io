@@ -442,14 +442,14 @@ button{
     box-sizing: border-box;
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: black;
-    color: white;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.project a:hover {
-    background-color: #0056b3;
+.project button:hover {
+    background-color: yellow;
+    color: black;
 }
 
 
@@ -467,7 +467,7 @@ button{
     .project{
         box-sizing: border-box;
         width: 210px;
-        height: 210px; 
+        height: 220px; 
     }
     #projects{
         text-align: center;
@@ -495,6 +495,12 @@ button{
     .project a{
         font-size: 5px;
         
+    }
+    #projects button{
+        width: 50%;
+        height: 20%;
+        font-size: 9px;
+
     }
 }
 

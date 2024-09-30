@@ -16,8 +16,3 @@ window.onscroll = () => {
 };
 
 
-function toggleMenu() {
-  const nav = document.querySelector('.navigation ul');
-  nav.classList.toggle('active');
-}
-

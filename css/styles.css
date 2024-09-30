@@ -156,11 +156,7 @@ button{
 
 @media (max-width: 768px) {
 
-    body{
-        margin-left: 5%;
-        margin-right: 5%;
-
-    }
+   
     .navbar {
         height: auto;
         width:auto;
@@ -189,7 +185,7 @@ button{
     }
 
     .home-img {
-        margin-top: 20%;
+        margin-top: 50%;
         width: 8rem;
         height: 8rem;
     }
@@ -275,15 +271,14 @@ button{
         padding-bottom: 150px; 
     }
 
-    #About .aboutcontent {
-        margin-left: 0; 
+    #About .aboutcontent { 
         padding-left: 0; 
         text-align: center; 
     }
 
      #About .about_img {
-      height: 150px;
-      width: 150px;
+      height: 190px;
+      width: 190px;
       margin: auto;
 
     }
@@ -433,8 +428,6 @@ button{
 
 }
 
-
-
 .projects .project:hover{
     transform: scale(1.07);
 }
@@ -461,7 +454,9 @@ button{
 
 
 @media (max-width: 600px) {
-
+    #projects{
+        margin-left: 5%;
+    }
     .projects {
         text-align: center;
     }

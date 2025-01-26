@@ -219,7 +219,12 @@ body {
 }
 
 /* Responsive Styles */
+
 @media (max-width: 768px) {
+body{
+  margin-left: 5%;
+}
+
   .navbar .nav-links {
     display: none;
   }
@@ -247,6 +252,24 @@ body {
     width: 200px;
     height: 200px;
   }
+  .navbar .md\:flex {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+ 
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.hidden {
+    display: block;
+  }
+  
+  
+
 }
 
 

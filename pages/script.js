@@ -1,7 +1,29 @@
+
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+  mobileMenu.classList.toggle("flex");  
+});
+
+window.addEventListener("click", (event) => {
+  if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+    mobileMenu.classList.add("hidden");
+  }
+
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 798) {
+    mobileMenu.classList.add("hidden");
+  }
+});
+
+
 const contactForm = document.querySelector('#contact form');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  // Add your form submission logic here
+  
   alert('Thank you for your message! I will get back to you soon.');
   contactForm.reset();
 });
@@ -43,3 +65,4 @@ document.addEventListener('DOMContentLoaded', () => {
  progressBars.forEach(bar => {
    progressObserver.observe(bar);
  });
+});

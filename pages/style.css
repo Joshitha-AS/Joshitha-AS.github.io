@@ -258,8 +258,6 @@ body{
     width: 100%;
   }
 
- 
-
   .mobile-menu {
     display: none;
   }
@@ -267,9 +265,6 @@ body{
   .mobile-menu.hidden {
     display: block;
   }
-  
-  
-
 }
 
 

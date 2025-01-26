@@ -1,24 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
 
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
 
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-  mobileMenu.classList.toggle("flex");  
-});
-
-window.addEventListener("click", (event) => {
-  if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
-    mobileMenu.classList.add("hidden");
-  }
-
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth >= 798) {
-    mobileMenu.classList.add("hidden");
-  }
-});
-
+  // Hide the menu when a link is clicked
+  mobileMenu.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      mobileMenu.classList.add('hidden');
+    }
+  });
 
 const contactForm = document.querySelector('#contact form');
 contactForm.addEventListener('submit', (e) => {

@@ -1,176 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS,">
-    <meta name="description" content="Free Web tutorials for HTML and CSS">
-    <title>Joshitha Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-
-<body>
-    <main>
-        <!-- home page -->
-
-        <section id="Home" class="container">
-            <header>
-                <div class="navbar">
-                    <h1 class="portfolio-heading">Portfolio</h1>
-                    <nav class="navigation">
-                        <ul>
-                            <li><a class="active" href="#Home">Home</a></li>
-                            <li><a href="#About">About</a></li>
-                            <li><a href="#MySkills">Skills</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-
-            <section class="Homecontent">
-                <div>
-                    <img src="./assets/home-img-1.png" alt="profile picture" height="200" class="home-img">
-                </div>
-
-                <div class="home-desc">
-                    <h2>Hello, I'm Joshitha</h2>
-                    <h3>I'm a <span>Web Developer</span></h3>
-                    <p>with good experience and skills in various fields of web development
-                        and software designing.</p><br>
-                </div>
-
-                <div class="btn-box btns">
-                    <button type="submit" class="button"><a href="mailto:joshitha.adaikalam@fssa.freshworks.com">Hire Me!</a></button>
-                </div>
-            </section>
-        </section>
-
-        <!-- About page -->
-
-        <section class="container" id="About">
-            <section class="aboutcontent">
-                <div class="about_decbox"></div>
-                <h1>GET TO KNOW ME</h1>
-                <h2>Hello Everyone!</h2>
-                <p class="about_para">I am <span class="about_name"> Joshitha.</span> I’m passionate about my work.
-                    I'm dedicated to delivering results and take pride in getting the job done right. As a lifelong learner, I consider myself a "forever student," always eager to explore new knowledge and skills.
-                    My ambition is to combine my passion for learning and my technical expertise to eventually launch a business in the IT sector, contributing innovative solutions to the industry.</p>
-            </section>
-            <section class="about_img">
-                <img class="about_img" src="./assets/About-img.jpeg" height="500px" alt="image">
-            </section>
-            <section class="designboxes">
-                <div class="box box1"></div>
-                <div class="box box2"></div>
-            </section>
-        </section>
-
-        <!------SKILL SECTION------>
-
-        <section id="MySkills" class="container">
-            <h2 class="heading">MY SKILLS</h2>
-
-            <p class="topic">HTML</p>
-            <div class="skill">
-                <div class="no htmlbox">80%</div>
-            </div>
-
-            <p class="topic">CSS</p>
-            <div class="skill">
-                <div class="no cssbox">50%</div>
-            </div>
-
-            <p class="topic">Javascript</p>
-            <div class="skill">
-                <div class="no javascriptbox">10%</div>
-            </div>
-
-            <p class="topic">Python</p>
-            <div class="skill">
-                <div class="no pythonbox">20%</div>
-            </div>
-
-            <p class="topic">My SQL</p>
-            <div class="skill">
-                <div class="no mysqlbox">40%</div>
-            </div>
-
-
-        </section>
-
-
-        <!-- project page -->
-        <section id="projects" class="container">
-            <h1>My Projects</h1>
-            <p class="project_desc">See what I've been building</p>
-            <section class="projects">
-               <a href="https://joshitha-as.github.io/Project1-for-Portfolio/"><div class="project">
-                    <!-- project 1 -->
-                    <img src="./assets/project-img-1.jpg" height="200px" alt="project_newsletter">
-                    <p>This is a newsletter front page</p>
-                    <button href="https://joshitha-as.github.io/Project1-for-Portfolio/">View Project</button>
-                </div></a>
-
-                <a href="https://joshitha-as.github.io/Project2-for-Portfolio/"><div class="project">
-                      <!-- <h2>Project Two</h2> -->
-                    <img src="./assets/project-img-2.jpg" height="200px" alt="project_profile">
-                    <p>This is a front page of social media profile</p>
-                    <button type="submit" href="https://joshitha-as.github.io/Project2-for-Portfolio/">View Project</button>
-                </div></a>
-
-                <a href="https://joshitha-as.github.io/Project3-for-Portfolios/"><div class="project">
-                    <!-- <h2>Project Three</h2> -->
-                    <img src="./assets/project-img-3.png" height="200px" alt="project_india">
-                    <p>This is a sample front page of India culture</p>
-                    <button type="submit" href="https://joshitha-as.github.io/Project3-for-Portfolios/">View Project</button>
-                </div></a>
-
-            </section>
-        </section>
-
-
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshitha - Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="/pages/style.css" rel="stylesheet">
+    <style>
+      .bg-lime-500 { background-color: #38a169; }
+      .text-lime-500 { color: #38a169; }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <nav class="fixed w-full bg-black/50 backdrop-blur-sm z-50 navbar">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <a href="#home" class="text-2xl font-bold logo">JOSH</a>
+          <div class="hidden md:flex gap-6">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+          <button class="md:hidden" id="menuBtn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+            </svg>
+          </button>
         </div>
-        </section>
+      </div>
+      <div class="md:hidden hidden mobile-menu" id="mobileMenu">
+        <div class="px-4 py-3 space-y-1">
+          <a href="#home" class="block py-2 px-3 rounded hover:bg-white">Home</a>
+          <a href="#about" class="block py-2 px-3 rounded hover:bg-gray-700">About</a>
+          <a href="#skills" class="block py-2 px-3 rounded hover:bg-gray-700">Skills</a>
+          <a href="#education" class="block py-2 px-3 rounded hover:bg-gray-700">Education</a>
+          <a href="#contact" class="block py-2 px-3 rounded hover:bg-gray-700">Contact</a>
+        </div>
+      </div>
+    </nav>
 
-        <!-- contact page -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="min-h-screen pt-20 flex items-center hero">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/2 hero-content" data-aos="fade-right">
+              <h1 class="text-5xl font-bold mb-6">
+                Hi, I'm <span class="text-lime-500">Joshitha</span>
+              </h1>
+              <h2 class="text-3xl mb-6">Full Stack Web Developer</h2>
+              <p class="text-white mb-8 ">
+                I craft beautiful and functional websites with modern technologies.<br>
+                Let's work together to bring your ideas to life!
+              </p>
+              <div class="flex gap-4 buttons">
+                <a href="#contact" class="bg-lime-500 text-black px-6 py-3 rounded-full hover:bg-lime-600 transition btn-primary">
+                  Hire Me
+                </a>
+                <a href="#projects" class="border border-lime-500 px-6 py-3 rounded-full hover:bg-lime-500/10 transition btn-secondary">
+                  View Work
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="contacts" class="container">
-            <h3 class="heading-contacts">Contact Me</h3>
-            <form class="contacts-content" action="https://formspree.io/f/xovaorka" method="post" name="contact-form">
-                <div class="input-container">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="contact-form" required>
+      <!-- About Section -->
+      <section id="about" class="py-20 bg-black/30">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col items-center text-center">
+            <div data-aos="fade-right">
+              <img src="./assets/about-profile-img.jpg" alt="Joshitha" class="w-72 h-72 rounded-full object-cover mx-auto">
+            </div>
+            <div data-aos="fade-left" class="mt-8">
+              <h2 class="text-4xl font-bold mb-8">About Me</h2>
+              <p class="text-white mb-4 text-lg">
+                 I am a Full Stack Web Developer with a passion for creating user-friendly web applications. <br>
+                I am a lifelong learner committed to mastering new skills and staying ahead in the ever-evolving tech landscape.<br>
+                 My passion lies in crafting intuitive, user-focused websites while continuously enhancing my expertise to deliver <br>
+                 exceptional web solutions. I embrace challenges as opportunities for growth and approach every obstacle with<br>
+                  curiosity, determination, and a problem-solving mindset.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8" data-aos="fade-up">My Skills</h2>
+            
+            <div class="space-y-8">
+              <div data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-6">Technical Skills</h3>
+                
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>HTML5</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="h-2 bg-gray-700 rounded-full">
+                      <div class="h-full bg-lime-500 rounded-full w-0 scroll-bar" data-progress="90"></div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>CSS3</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="h-2 bg-gray-700 rounded-full">
+                      <div class="h-full bg-lime-500 rounded-full w-0 scroll-bar" data-progress="90"></div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>JavaScript</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="h-2 bg-gray-700 rounded-full">
+                      <div class="h-full bg-lime-500 rounded-full w-0 scroll-bar" data-progress="85"></div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>MySQL</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="h-2 bg-gray-700 rounded-full">
+                      <div class="h-full bg-lime-500 rounded-full w-0 scroll-bar" data-progress="80"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>Firebase</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="h-2 bg-gray-700 rounded-full">
+                      <div class="h-full bg-lime-500 rounded-full w-0 scroll-bar" data-progress="80"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>Github</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="h-2 bg-gray-700 rounded-full">
+                      <div class="h-full bg-lime-500 rounded-full w-0 scroll-bar" data-progress="80"></div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>Python</span>
+                      <span>50%</span>
+                    </div>
+                    <div class="h-2 bg-gray-700 rounded-full">
+                      <div class="h-full bg-lime-500 rounded-full w-0 scroll-bar" data-progress="50"></div>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="input-container">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="contact-form" required>
+              </div>
+              
+              <div data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-2xl font-bold mb-6">Life Skills</h3>
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span>Life Skills</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="h-2 bg-gray-700 rounded-full">
+                    <div class="h-full bg-lime-500 rounded-full w-0 scroll-bar" data-progress="80"></div>
+                  </div>
                 </div>
+              </div>
+             
+            </div> 
+             
+          </div>
+        </div>
+      </section>
 
-                <div class="input-container">
-                    <label for="mobile">Mobile Number</label>
-                    <input type="tel" id="mobile" name="contact-form" required>
+      <!-- Education Section -->
+      <section id="education" class="py-20 bg-black/30">
+        <div class="container mx-auto px-4">
+          <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8" data-aos="fade-up">Education</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-800 p-6 rounded-lg education-box" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="text-xl font-bold">10th</h3>
+                  <span class="text-lime-500">2020 - 2021</span>
                 </div>
+                <p class="text-gray-400"></p>
+                <p class="text-gray-400 mt-2">
+                  Completed 10th grade with 90%.
+                </p>
+              </div>
 
-                <div class="input-container">
-                    <label for="message">Message</label>
-                    <textarea id="message" class="form-control" name="contact-form" required></textarea>
+              <div class="bg-gray-800 p-6 rounded-lg education-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="text-xl font-bold">12th</h3>
+                  <span class="text-lime-500">2023 - 2024</span>
                 </div>
+                
+                <p class="text-gray-400 mt-2">
+                  Major in Computer Science with, Mathematics.
+                </p>
+              </div>
 
-                <div class="buttn">
-                    <button type="submit" class="btn">Contact Me!</button>
+              <div class="bg-gray-800 p-6 rounded-lg education-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="text-xl font-bold">Web Development Course (Freshworks academy)</h3>
+                  <span class="text-lime-500">2024 - 2025</span>
                 </div>
-            </form>
-        </section>
+                <p class="text-gray-400"></p>
+                <p class="text-gray-400 mt-2">
+                  Intensive 1 year course on Full Stack Web Development. learned html,css,js,react,python,mysql and did a capstone project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="projects" class="py-20 bg-black/30">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Projects</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-2 gap-4">
+              <img src="./assets/project-img1.png" alt="Project One" class="w-full h-auto object-cover rounded-lg" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/project-img2.png" alt="Project Two" class="w-full h-auto object-cover rounded-lg" data-aos="fade-up" data-aos-delay="200">
+              <img src="./assets/project-img3.png" alt="Project Three" class="w-full h-auto object-cover rounded-lg" data-aos="fade-up" data-aos-delay="300">
+              <img src="./assets/project-img4.png" alt="Project Four" class="w-full h-auto object-cover rounded-lg" data-aos="fade-up" data-aos-delay="400">
+            </div>
+            <div data-aos="fade-left">
+              <h3 class="text-2xl font-bold mb-4">Socify</h3>
+              <p class="text-white mb-4">
+                Socify is a social media platform made for everyone. It’s a space where people can share their ideas, experiences, and questions easily. The platform encourages meaningful connections and makes it simple to interact with others.
+                <br><br>
+                <strong>Details:</strong>
+                <ul class="list-disc list-inside text-white">
+                  <li>Implemented responsive design using Tailwind CSS.</li>
+                  <li>Used JavaScript for dynamic content and interactivity.</li>
+                  <li>Realtime firebase for fetching and storing user data.</li>
+                  <li>It has realtime chatting feature with encryption.</li>
+                  <li>Deployed the project on Netlify.</li>
+                </ul>
+              </p>
+              <div class="mt-6">
+                <a href="https://socify1.netlify.app/" class="border border-lime-500 px-6 py-3 rounded-full hover:bg-lime-500/10 transition btn btn-secondary">
+                  Visit Socify
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-10">
+        <div class="container mx-auto px-4">
+          <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8" data-aos="fade-up">Get In Touch</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+              <div data-aos="fade-right">
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <i class="fas fa-envelope text-lime-500"></i>
+                    <div>
+                      <h3 class="font-bold">Email</h3>
+                      <p class="text-gray-400">asjoshitha2312@gmail.com</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center gap-4">
+                    <i class="fas fa-phone text-lime-500"></i>
+                    <div>
+                      <h3 class="font-bold">Phone</h3>
+                      <p class="text-gray-400">99999 88888</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center gap-4">
+                    <i class="fas fa-map-marker-alt text-lime-500"></i>
+                    <div>
+                      <h3 class="font-bold">Location</h3>
+                      <p class="text-gray-400">Perungudi, Chennai</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <form class="space-y-4" data-aos="fade-left">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-400">Name</label>
+                  <input type="text" id="name" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-white focus:border-lime-500 focus:ring focus:ring-lime-500 focus:ring-opacity-50 contact-input">
+                </div>
+                
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-400">Email</label>
+                  <input type="email" id="email" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-white focus:border-lime-500 focus:ring focus:ring-lime-500 focus:ring-opacity-50 contact-input">
+                </div>
+                
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-400">Message</label>
+                  <textarea id="message" rows="4" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-white focus:border-lime-500 focus:ring focus:ring-lime-500 focus:ring-opacity-50 contact-input"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-lime-500 text-white px-6 py-3 rounded-full hover:bg-lime-600 transition transform hover:scale-105">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-  
-<script src="./script.js"></script>
-</body>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <p class="text-white-400">&copy; 2024 Joshitha. All rights reserved.</p>
+          <div class="flex gap-4">
+            <a href="https://github.com/Joshitha-AS" class="text-gray-400 hover:text-black">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joshitha-adaikalaraj-568681316/" class="text-gray-400 hover:text-black">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="text-gray-400 hover:text-black">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+    <script type="module" src="./pages/script.js"></script>
+  </body>
 </html>

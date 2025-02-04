@@ -18,7 +18,28 @@ contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   
   alert('Thank you for your message! I will get back to you soon.');
-  contactForm.reset();
+contactForm.reset();
+  });
+
+
+  // Progress bar animation
+  const progressBars = document.querySelectorAll('[data-progress]');
+  
+  const progressObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const progressBar = entry.target;
+        const progress = progressBar.dataset.progress;
+        progressBar.style.width = `${progress}%`;
+        progressBar.style.transition = 'width 1s ease-in-out';
+        observer.unobserve(progressBar);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  progressBars.forEach(bar => {
+    progressObserver.observe(bar);
+  });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -38,24 +59,23 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(section => {
     observer.observe(section);
   });
-});
 
- // Progress bar animation
- const progressBars = document.querySelectorAll('[data-progress]');
+  // Progress bar animation
+  const progressBars = document.querySelectorAll('[data-progress]');
   
- const progressObserver = new IntersectionObserver((entries, observer) => {
-   entries.forEach(entry => {
-     if (entry.isIntersecting) {
-       const progressBar = entry.target;
-       const progress = progressBar.dataset.progress;
-       progressBar.style.width = `${progress}%`;
-       progressBar.style.transition = 'width 1s ease-in-out';
-       observer.unobserve(progressBar);
-     }
-   });
- }, { threshold: 0.5 });
+  const progressObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const progressBar = entry.target;
+        const progress = progressBar.dataset.progress;
+        progressBar.style.width = `${progress}%`;
+        progressBar.style.transition = 'width 1s ease-in-out';
+        observer.unobserve(progressBar);
+      }
+    });
+  }, { threshold: 0.5 });
 
- progressBars.forEach(bar => {
-   progressObserver.observe(bar);
- });
+  progressBars.forEach(bar => {
+    progressObserver.observe(bar);
+  });
 });

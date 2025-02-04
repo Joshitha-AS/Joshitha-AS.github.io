@@ -96,9 +96,8 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   padding-top: 5rem;
-  background-image: url(/assets/bg-img-main.jpeg);
+  background-image: url(/assets/bg-img-port-2.jpg);
   background-size: contain;
-  background-position-x: right;
   background-attachment: fixed;
 }
 
